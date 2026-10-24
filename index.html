@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>Negocio de Préstamos</title>
+
+  <!-- Tema / PWA -->
+  <meta name="theme-color" content="#122018" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Préstamos" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <!-- Vista previa al compartir el link (WhatsApp, redes) -->
+  <meta property="og:title" content="Negocio de Préstamos" />
+  <meta property="og:description" content="Control de clientes, cuotas y caja del negocio de préstamos." />
+  <meta property="og:image" content="icon-512.png" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Letras: Fraunces (títulos) e Inter (texto). Sin internet se usa una letra del sistema. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #122018;
+      color: #1B2A21;
+      font-family: Inter, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-text-size-adjust: 100%;
+    }
+    #root { min-height: 100vh; }
+    input, select, button { font-family: inherit; }
+    input:focus, select:focus { outline: none; border-color: #3F8A5F !important; }
+    button { transition: transform .08s ease, filter .12s ease; }
+    button:active { transform: scale(0.97); }
+    .del-btn:hover { background: #FBEAE4 !important; }
+    ::-webkit-scrollbar { width: 0; height: 0; }
+    /* Pantalla de carga: se reemplaza cuando app.js dibuja la app */
+    .cargando { min-height: 100vh; display: flex; align-items: center; justify-content: center; color: #D4B84C; font-size: 15px; font-weight: 600; letter-spacing: .3px; }
+  </style>
+</head>
+<body>
+  <div id="root"><div class="cargando">Cargando…</div></div>
+  <noscript><p style="color:#fff;padding:24px;">Esta aplicación necesita JavaScript para funcionar.</p></noscript>
+
+  <!-- Toda la lógica de la app vive en app.js -->
+  <script src="app.js"></script>
+</body>
+</html>

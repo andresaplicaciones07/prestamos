@@ -1,0 +1,4 @@
+{
+  "_ayuda": "Agrega tus anuncios en la lista. Cada uno: titulo, texto, enlace (opcional, empieza con https://) e imagen (opcional, ruta o URL). Si la lista queda vacía se muestra 'Tu publicidad aquí'. Edita este archivo en GitHub (✏️ → Commit changes) para actualizar los anuncios sin cambiar el código.",
+  "anuncios": []
+}
